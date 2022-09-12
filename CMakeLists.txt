@@ -6,6 +6,11 @@ project(PartPropTest VERSION 0.1
     LANGUAGES CXX
 )
 
-find_package(Gaudi)
-
 add_executable(main src/main.cxx)
+
+# Now the Gaudi pieces
+find_package(Gaudi REQUIRED)
+include(GaudiToolbox)
+
+add_subdirectory(PartPropTest)
+add_subdirectory(GaudiHelloWorld)
