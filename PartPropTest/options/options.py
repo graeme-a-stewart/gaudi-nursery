@@ -1,7 +1,7 @@
 from Gaudi.Configuration import *
-from Configurables import partproptest
+from Configurables import PartPropTest
 
-alg = partproptest()
+alg = PartPropTest()
 
 ApplicationMgr(
     EvtMax = 10,

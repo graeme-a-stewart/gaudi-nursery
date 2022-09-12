@@ -13,7 +13,7 @@
 
 class IPartPropSvc;
 
-class partproptest : public Algorithm {
+class PartPropTest : public Algorithm {
 
 public:
   using Algorithm::Algorithm;

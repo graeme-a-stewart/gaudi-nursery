@@ -1,5 +1,5 @@
 
-#include "ppt.h"
+#include "PartPropTest.h"
 #include "GaudiKernel/IPartPropSvc.h"
 #include "GaudiKernel/ISvcLocator.h"
 #include "GaudiKernel/MsgStream.h"
@@ -10,11 +10,11 @@
 
 // Static Factory declaration
 
-DECLARE_COMPONENT( partproptest )
+DECLARE_COMPONENT( PartPropTest )
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-StatusCode partproptest::initialize() {
+StatusCode PartPropTest::initialize() {
 
   if ( service( "PartPropSvc", m_pps ).isFailure() ) {
     error() << "Could not get PartPropSvc" << endmsg;
@@ -40,7 +40,7 @@ StatusCode partproptest::initialize() {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-StatusCode partproptest::execute() { return StatusCode::SUCCESS; }
+StatusCode PartPropTest::execute() { return StatusCode::SUCCESS; }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 

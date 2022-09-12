@@ -4,7 +4,7 @@ find_package(HepPDT REQUIRED)
 
 gaudi_add_module(PartPropTest
     SOURCES
-        src/ppt.cxx
+        src/PartPropTest.cxx
     #LINK
         # GaudiKernel
         # GaudiAlgLib
